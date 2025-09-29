@@ -1,0 +1,276 @@
+/* global */
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f4f4f4;
+    margin-left: 150px;
+    margin-right: 150px;
+    -webkit-box-shadow: 0px 2px 19px 6px #565656; 
+    box-shadow: 0px 2px 19px 6px #565656;
+}
+
+html {
+    background-color: grey;
+}
+
+/* text */
+h2 {
+    margin-top: 0;
+    border-bottom: 2px solid black;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+button {
+    background: rgb(225, 225, 225);
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+
+}
+/* media */
+img {
+    width: 100%;
+}
+
+/* logo */
+
+.logo{
+    width: 30%;
+    margin: 20px 20px
+
+}
+
+/* nav */
+nav {
+    position: sticky;
+    top: 0;
+    margin: 20px 20px
+
+}
+
+.main-nav {
+    background: rgb(225, 225, 225);
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 2px solid;
+    border-bottom: none;
+}
+
+.main-nav-item.active {
+    background: white;
+}
+
+.main-nav-item {
+    flex: 1;                    
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid rgb(205, 205, 205);
+}
+
+.main-nav-item:first-child {
+    border-left: none;  
+}
+
+.main-nav-link {
+    display: flex;    
+    align-items: center;   
+    justify-content: center;  
+    width: 100%;                  
+    height: 100%;                 
+    padding: 10px 0;            
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s;
+}
+
+.main-nav-link.active {
+    background: white;
+    border: none;
+}
+
+.main-picture {
+    padding: 20px 20px;
+}
+
+/* index main */
+.row {
+    width: 100%;
+    margin: 20px 20px;
+    display: flex;
+    margin-bottom: 150px;
+
+}
+
+.about-column {
+    padding-right: 50px;
+    width:20%;
+}
+
+.candidates-column {
+    padding-right: 50px;
+    padding-left: 20px;
+    width:80%;
+}
+
+table {
+    background-color: white;
+    border-top: 2px solid rgb(205, 205, 205);
+    border-right: 2px solid rgb(205, 205, 205);
+    border-bottom: 2px solid rgb(205, 205, 205);
+    width: 100%;
+
+}
+th {
+    padding: 20px;
+    border-bottom: 2px solid rgb(148, 148, 148);
+    text-align: left;
+}
+
+.button-column {
+    border-left: 2px solid rgb(205, 205, 205);
+}
+
+.button-style {
+    display: flex;          
+    align-items: center;      
+    justify-content: center;   
+    border-radius: 20PX;
+    padding: 8px 24px;       
+    text-align: center;
+    cursor: pointer;   
+}
+
+td {
+    padding: 20px;
+    border-bottom: 2px solid rgb(205, 205, 205);;
+}
+
+/*services main*/
+.services-column {
+    width: 60%;
+}
+
+.contact-column {
+    margin-right: 20px;
+    width: 40%;
+}
+
+form {
+    max-width: 300px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #333;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.map-column {
+    padding-right: 50px;
+    width: 60%;
+}
+
+/* footer */
+
+footer{
+    border-top: 2px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+    body {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .logo {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+  /* Navbar stacks vertically */
+    .main-nav {
+        flex-direction: column;
+        border: none;
+    }
+
+    .main-nav-item {
+        border-left: none;
+        border-top: 1px solid rgb(205, 205, 205);
+        width: 100%;
+    }
+
+    .main-nav-item:first-child {
+        border-top: none;
+    }
+
+    .main-nav-link {
+        padding: 15px;
+    }
+
+  /* Content columns stack */
+    .row {
+        flex-direction: column;
+    }
+
+    .about-column,
+    .candidates-column,
+    .services-column,
+    .contact-column,
+    .map-column {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 70%;
+    }
+
+    .main-nav-link {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
