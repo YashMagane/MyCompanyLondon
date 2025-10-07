@@ -53,7 +53,7 @@ Each page was styled to mirror the provided Figma design:
 ## 🚀 How to View the Project
 
 You can view the live version of this project here:  
-🔗 **[Live Demo](https://yourusername.github.io/figma-to-html-css/)**  
+🔗 **[Live Demo](https://yashmagane.github.io/MyCompanyLondon/)**  
 
 To view locally:
 1. Clone the repository:
